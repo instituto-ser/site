@@ -1,0 +1,9 @@
+// Your custom SCSS should be written here...
+.fundo-menu {
+  background-color: $navbar-color;
+  color: $navbar-link-color;
+  > * {
+    color: $navbar-link-color;
+  }
+}
+

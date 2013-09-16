@@ -1,0 +1,28 @@
+/* = require_tree . */
+
+.column, .columns {
+  padding: 0.5em 1em;
+}
+
+#cabecalho {
+  text-align: right;
+  address {
+    white-space: pre-line;
+    color: #A3A3A3;
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 18px;
+    margin-top: 20px;
+  }
+}
+
+#logo-cabecalho {
+  float: left;
+}
+
+#menu-topo {
+  > ul {
+    padding: 0;
+  }
+}
+
