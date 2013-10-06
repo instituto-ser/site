@@ -18,9 +18,38 @@
     
     <%= stylesheet_link_tag 'all' %>
     <%= javascript_include_tag 'all' %>
+    <%= yield_content :header %>
   </head>
   
   <body class="<%= page_classes %>">
+
+    <div class="row">
+      <div id=cabecalho class="twelve columns">
+        <%= image_tag 'instituto-ser.png', id: 'logo-cabecalho', alt: 'Logomarca do Instituto Ser' %>
+        <div id=descricao-logo>
+          PARA MELHORAR A CONVIVÊNCIA
+          PARA APERFEIÇOAR A LIDERANÇA
+          PARA INTEGRAR AS PRÓPRIAS FORÇAS
+          PARA AGIR MELHOR EM TODOS OS AMBIENTES
+        </div>
+        <address>Rua Marquês de Montalvão
+                 Quadra F, nº 1, Jardim da Penha
+                 Vitória, Espírito Santo, Brasil</address>
+      </div>
+    </div>
+
+    <nav class="row navbar" id=menu-topo>
+      <%# barra de navegação para celulares: %>
+      <a class="toggle" gumby-trigger="#menu-topo > ul" href="#"><i class="icon-menu"></i></a>
+      <ul class="twelve columns">
+        <li><%= link_to 'Início', '/index.html' %></li>
+        <li><%= link_to 'O Instituto', '/instituto.html' %></li>
+        <li><%= link_to 'Serviços', '/servicos.html' %></li>
+        <li><%= link_to 'Programação de eventos', '/programacao.html' %></li>
+        <li><%= link_to 'Fale conosco', '/contato.html' %></li>
+      </ul>
+    </nav>
+
     <%= yield %>
 
     <!-- Grab Google CDN's jQuery, fall back to local if offline -->

@@ -2,33 +2,59 @@
 title: Instituto Ser
 ---
 
-<div class="row">
-<div id=cabecalho class="twelve columns">
-  <%= image_tag 'instituto-ser.png', id: 'logo-cabecalho', alt: 'Logomarca do Instituto Ser' %>
-  <address>Rua Marquês de Montalvão
-           Quadra F, nº 1, Jardim da Penha
-           Vitória, Espírito Santo, Brasil</address>
-</div>
-</div>
-
-<nav class="row navbar" id=menu-topo>
-  <%# barra de navegação para celulares: %>
-  <a class="toggle" gumby-trigger="#menu-topo > ul" href="#"><i class="icon-menu"></i></a>
-  <ul class="twelve columns">
-    <li><%= link_to 'Início', '/index.html' %></li>
-    <li><%= link_to 'O Instituto', '#' %></li>
-    <li><%= link_to 'Serviços', '#' %></li>
-    <li><%= link_to 'Programação de cursos', '#' %></li>
-    <li><%= link_to 'Fale conosco', '#' %></li>
-  </ul>
-</nav>
-
-<div class="row">
-  <div class="twelve columns centered">
-    <h1>Imagem chamada principal</h1>
+<div class="row" id=chamada-principal>
+  <div class="six columns">
+    <%= image_tag 'curso-em-andamento.jpg', id: 'curso-em-andamento', alt: 'Curso em andamento' %>
+  </div>
+  <div class="six columns">
+    <h1>Quem sou eu?</h1>
+    <h1>Por que sou assim?</h1>
+    <h1 id=de-um-up>Dê um <em>up</em> na sua vida e na sua carreira.</h1>
   </div>
 </div>
 
+<div class="row">
+  <div class="four columns">
+    <iframe width="300" height="169" src="//www.youtube.com/embed/FFD3dOgGklI?list=PL99ZDIeBkT6hbe9mTggPC1t-SVYk29SXR" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="four columns">
+    <iframe width="300" height="169" src="//www.youtube.com/embed/hn8pHGTSwsE?list=PL99ZDIeBkT6hbe9mTggPC1t-SVYk29SXR" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="four columns">
+    <iframe width="300" height="169" src="//www.youtube.com/embed/d9t_vslvPpA?list=PL99ZDIeBkT6hbe9mTggPC1t-SVYk29SXR" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<!--
+<div class="row">
+  <div class="twelve columns">
+    <p class=negrito>O Instituto SER destina-se ao atendimento pessoal,
+    comunitário, familiar, educacional, empresarial com foco nas relações pessoais
+    e interpessoais.</p>
+    <p>As atividades aqui propostas e desenvolvidas são molas propulsoras para a
+    compreensão da dinâmica da vida do indivíduo, o despertar de consciência da
+    grandeza e potencial de cada um culminando no descobrimento de caminhos de
+    aprimoramento.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div id=o-que-fazemos class="twelve columns">
+    <div class=negrito>O que fazemos?</div>
+    <p><span class=negrito>O Instituto SER é uma Instituição</span> com fins formativo,
+    informativo e transformador. Devolve a cada SER humano o que é seu por direito. Leva
+    você de volta para casa, ao seu mais íntimo de você mesmo, ao seu verdadeiro SER.</p>
+    <p><span class=negrito>A missão do Instituto SER é</span> tornar as pessoas mais
+    humanizadas com a expansão de sua consciência pessoal e a do entorno e harmonizar
+    todas as relações para que tenhamos uma sociedade desejável e saudável.</p>
+    <p><span class=negrito>A visão do Instituto SER é</span> aumentar a organização,
+    disciplina e bem-estar no ambiente empresarial gerando aumento de produção e
+    valor à empresa, e no contexto pessoal levar todo ser humano de volta à sua
+    essência alinhando sua vida pessoal, familiar, profissional e espiritual.</p>
+    <p><span class=negrito>Os valores do Instituto SER são</span> pautados pelo
+    profissionalismo, seriedade, ética, conhecimento profundo das necessidades
+    humanas e pela fidelidade ao cliente.</p>
+  </div>
+</div>
 <div class="row">
   <div class="six columns">
     <h1 class="fundo-menu">Próximos Cursos</h1>
@@ -62,3 +88,4 @@ title: Instituto Ser
   </div>
 </div>
 
+-->
