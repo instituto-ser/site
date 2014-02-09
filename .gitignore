@@ -19,3 +19,5 @@
 # Vim swap files
 *.sw?
 
+/bin
+.project
