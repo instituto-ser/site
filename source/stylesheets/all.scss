@@ -85,6 +85,12 @@ body {
 }
 
 .servico, #programacao {
+
+  ul.lista-reiki {
+    list-style: disc;
+    li { margin-left: 4em; }
+  }
+  
   h1, h2 { text-align: left; }
 
   h1 {
@@ -97,3 +103,8 @@ body {
   }
 }
 
+#reiki {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: image_url('fundo-reiki.jpg');
+}
